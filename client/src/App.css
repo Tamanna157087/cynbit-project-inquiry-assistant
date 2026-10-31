@@ -1,0 +1,283 @@
+.page {
+  min-height: 100vh;
+  background: #f4f6fa;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 8%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8eaf0;
+}
+
+.navbar h2 {
+  letter-spacing: 2px;
+  font-size: 23px;
+  margin: 0;
+  color: #172033;
+}
+
+.navbar h2 span {
+  color: #269c82;
+}
+
+.navbar a {
+  color: #269c82;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form-card {
+  background: white;
+  width: 100%;
+  max-width: 680px;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+.eyebrow {
+  color: #269c82;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.form-card h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #172033;
+}
+
+.subtitle {
+  color: #737d90;
+  line-height: 1.6;
+}
+
+.progress {
+  height: 6px;
+  background: #e9edf2;
+  border-radius: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #269c82;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.step-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 35px;
+  font-size: 12px;
+  color: #7c8494;
+}
+
+.form-card h3 {
+  font-size: 17px;
+  margin-bottom: 18px;
+  color: #172033;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.option {
+  padding: 20px;
+  border: 1px solid #e1e5eb;
+  border-radius: 9px;
+  background: white;
+  color: #172033;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.option:hover,
+.option.selected {
+  border-color: #269c82;
+  background: #effaf6;
+  color: #16836b;
+}
+
+.form-card label {
+  display: block;
+  font-weight: bold;
+  color: #172033;
+  margin-bottom: 12px;
+  margin-top: 22px;
+}
+
+.form-card textarea,
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #dce1e8;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.form-card textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-card input {
+  height: 48px;
+}
+
+.form-card select {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.form-card textarea:focus,
+.form-card input:focus,
+.form-card select:focus {
+  outline: none;
+  border-color: #269c82;
+  box-shadow: 0 0 0 3px rgba(38, 156, 130, 0.1);
+}
+
+.section-description {
+  color: #737d90;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.continue-btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #269c82;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+}
+
+.continue-btn:hover {
+  background: #1c826c;
+}
+
+.back-btn {
+  padding: 15px 22px;
+  border: 1px solid #dce1e8;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #f4f6fa;
+}
+
+.summary {
+  background: #f5faf8;
+  border: 1px solid #dcefe8;
+  border-radius: 9px;
+  padding: 20px;
+  margin-top: 28px;
+}
+
+.summary h3 {
+  margin-top: 0;
+}
+
+.summary p {
+  color: #596579;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.summary strong {
+  color: #172033;
+}
+
+.success-screen {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.success-screen svg {
+  color: #269c82;
+  margin-bottom: 15px;
+}
+
+.success-screen p {
+  color: #737d90;
+  line-height: 1.6;
+}
+
+.success-note {
+  font-size: 13px;
+}
+
+@media (max-width: 550px) {
+  .form-card {
+    padding: 24px 18px;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card h1 {
+    font-size: 25px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .back-btn {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+}
