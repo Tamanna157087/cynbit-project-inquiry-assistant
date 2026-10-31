@@ -12,6 +12,9 @@ import {
 
 import "./App.css";
 
+// Live Render backend URL
+const API_URL = "https://cynbit-inquiry-backend.onrender.com";
+
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
 
@@ -97,7 +100,7 @@ function App() {
       setErrorMessage("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/inquiries",
+        `${API_URL}/api/inquiries`,
         projectData,
       );
 
